@@ -11,8 +11,15 @@
       class="relative bg-black shadow-[0px_-10px_25px_0px_rgba(255,255,255,0.09)] flex flex-col justify-center items-center"
     >
       <!-- HERO CONTAINER  -->
+      <div
+        class="absolute top-0 inset-0 opacity-[0.2] bg-repeat"
+        style="
+          background-image: url('./src/assets/clip-group_.png');
+          background-size: contain;
+        "
+      ></div>
       <div class="flex flex-col items-center justify-center w-full">
-        <figure
+        <!-- <figure
           class="bg-black mix-blend-screen min-h-screen] w-full absolute z-0 opacity-[0.2] shrink-0 top-0"
         >
           <img
@@ -20,7 +27,7 @@
             alt="bg"
             class="min-h-screen w-full object-cover"
           />
-        </figure>
+        </figure> -->
         <div class="relative z-50 mt-[141px]">
           <header
             class="bg-[#121414] largest:w-[1320px] 4xl:w-[1320px] 3xl:w-[1320] xxl:w-[1320px] xl:w-full lg:w-full md:w-full sm:w-full xs:w-full h-[106px] largest:px-[92px] xxl:px-[92px] lg:px-[92px] md:px-[20px] flex largest:gap-[188px] 4xl:gap-[188px] xxl:gap-[188px] xl:gap-[188px] lg:gap-[188px] md:gap-[100px] sm:gap-[30px] xs:gap-[10px] 3xl:gap-[188px] xs:px-7 sm:px-7"
@@ -184,13 +191,13 @@
               </div>
             </nav>
             <div class="w-[356px] bg-[#000]">
-              <figure class="w-full h-[504px] bg-[#000]">
+              <!-- <figure class="w-full h-[504px] bg-[#000]">
                 <img
                   src="./src/assets/handsome.png"
                   class="w-full h-full object-contain"
                   alt=""
                 />
-              </figure>
+              </figure> -->
               <div class="flex gap-4 mt-[14px] items-center justify-center">
                 <a
                   href="#"
@@ -373,7 +380,7 @@
       </div>
       <!-- RESUME CONTAINER  -->
       <div class="relative w-full flex items-center justify-center">
-        <figure
+        <!-- <figure
           class="bg-black mix-blend-screen min-h-screen w-full absolute z-0 opacity-[0.2] shrink-0 top-0"
         >
           <img
@@ -381,7 +388,7 @@
             alt="bg"
             class="min-h-screen w-full object-cover"
           />
-        </figure>
+        </figure> -->
         <div
           class="w-full bg-[#171B1A] min-h-full largest:w-[1320px] 4xl:w-[1320px] 3xl:w-[1320] xxl:w-[1320px] xl:w-full lg:w-full md:w-full sm:w-full xs:w-full z-50 relative pt-[64px]"
         >
@@ -489,7 +496,7 @@
       </div>
       <!-- WORK HISTORY  -->
       <div class="relative w-full flex items-center justify-center">
-        <figure
+        <!-- <figure
           class="bg-black mix-blend-screen min-h-screen w-full absolute z-0 opacity-[0.2] shrink-0 top-0"
         >
           <img
@@ -497,7 +504,7 @@
             alt="bg"
             class="min-h-screen w-full object-cover"
           />
-        </figure>
+        </figure> -->
         <div
           class="w-full bg-[#171B1A] min-h-full largest:w-[1320px] 4xl:w-[1320px] 3xl:w-[1320] xxl:w-[1320px] xl:w-full lg:w-full md:w-full sm:w-full xs:w-full z-50 relative pt-[64px]"
         >
@@ -600,7 +607,7 @@
       </div>
       <!-- SKILLS  -->
       <div class="relative w-full flex items-center justify-center">
-        <figure
+        <!-- <figure
           class="bg-black mix-blend-screen min-h-screen w-full absolute z-0 opacity-[0.2] shrink-0 top-0"
         >
           <img
@@ -608,7 +615,7 @@
             alt="bg"
             class="min-h-screen w-full object-cover"
           />
-        </figure>
+        </figure> -->
         <div
           class="w-full bg-[#171B1A] min-h-full largest:w-[1320px] 4xl:w-[1320px] 3xl:w-[1320] xxl:w-[1320px] xl:w-full lg:w-full md:w-full sm:w-full xs:w-full z-50 relative"
         >
@@ -716,15 +723,16 @@
       </div>
       <!-- PORTFOLIO  -->
       <div class="relative w-full flex items-center justify-center">
-        <figure
+        <!-- <figure
           class="bg-black mix-blend-screen min-h-screen w-full absolute z-0 opacity-[0.2] shrink-0 top-0"
         >
           <img
             src="./src/assets/clip-group_.png"
             alt="bg"
-            class="min-h-screen w-full object-cover"
+            class="min-h-screen w-full object-cover "
           />
-        </figure>
+        </figure> -->
+
         <div
           class="w-full bg-[#171B1A] min-h-full largest:w-[1320px] 4xl:w-[1320px] 3xl:w-[1320] xxl:w-[1320px] xl:w-full lg:w-full md:w-full sm:w-full xs:w-full z-50 relative"
         >
@@ -732,6 +740,125 @@
             <h2 class="text-[#FFFFFF] font-dm font-bold text-[48px]">
               Portfolio
             </h2>
+            <div>
+              <!-- TAB BUTTONS  -->
+              <div
+                class="mt-10 bg-[#000] rounded-[6px] shadow-[0px_0px_25px_10px_rgba(255,255,255,0.06)] w-[688px] h-[60px] flex items-center justify-center gap-10 pt-[22px]"
+              >
+                <button
+                  class="font-dm font-normal bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent text-[16px] flex flex-col gap-[10px]"
+                >
+                  All
+                  <span
+                    class="bg-gradient-to-r from-[#F5BD4D] to-[#F89222] h-1 w-full"
+                  ></span>
+                </button>
+                <button
+                  class="font-dm font-normal text-[#FFF] flex flex-col gap-[10px] items-center"
+                >
+                  Graphic Design
+                  <span
+                    class="bg-gradient-to-r from-[#F5BD4D] to-[#F89222] h-1 w-full"
+                  ></span>
+                </button>
+                <button
+                  class="font-dm font-normal text-[#FFF] flex flex-col gap-[10px] items-center"
+                >
+                  Mobile App
+                  <span
+                    class="bg-gradient-to-r from-[#F5BD4D] to-[#F89222] h-1 w-full"
+                  ></span>
+                </button>
+                <button
+                  class="font-dm font-normal text-[#FFF] flex flex-col gap-[10px] items-center"
+                >
+                  Photography
+                  <span
+                    class="bg-gradient-to-r from-[#F5BD4D] to-[#F89222] h-1 w-full"
+                  ></span>
+                </button>
+                <button
+                  class="font-dm font-normal text-[#FFF] flex flex-col items-center"
+                >
+                  UI/UX Design
+                  <span
+                    class="bg-gradient-to-r from-[#F5BD4D] to-[#F89222] h-1 w-full mt-[10px]"
+                  ></span>
+                </button>
+              </div>
+              <!-- TAB CONTENT CONTAINER -->
+              <div class="flex i gap-6 mt-6">
+                <div class="flex flex-col gap-6">
+                  <div class="border border-white w-[332px] h-[321px]">
+                    <img
+                      src="./src/assets/grid2.png"
+                      class="w-full h-full object-center"
+                      alt="Tab img"
+                    />
+                  </div>
+                  <div class="border border-white w-[332px] h-[447px]">
+                    <img
+                      src="./src/assets/grid3.png"
+                      class="w-full h-full object-center"
+                      alt="Tab img"
+                    />
+                  </div>
+                  <div class="border border-white w-[332px] h-[204px]">
+                    <img
+                      src="./src/assets/grid1.png"
+                      class="w-full h-full object-center"
+                      alt="Tab img"
+                    />
+                  </div>
+                  <div class="border border-white w-[332px] h-[204px]">
+                    <img
+                      src="./src/assets/grid1.png"
+                      class="w-full h-full object-center"
+                      alt="Tab img"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex items-start border border-white justify-start flex-col gap-0"
+                >
+                  <div class="w-[332px] h-[248px]">
+                    <img
+                      src="./src/assets/grid1.png"
+                      class="w-full h-full object-contain"
+                      alt="Tab img"
+                    />
+                  </div>
+                  <div class="w-[332px] h-[220px]">
+                    <img
+                      src="./src/assets/grid1.png"
+                      class="w-full h-full object-contain"
+                      alt="Tab img"
+                    />
+                  </div>
+                  <div class="w-[332px] h-[220px]">
+                    <img
+                      src="./src/assets/grid1.png"
+                      class="w-full h-full object-contain"
+                      alt="Tab img"
+                    />
+                  </div>
+                  <div class="w-[332px] h-[260px]">
+                    <img
+                      src="./src/assets/grid1.png"
+                      class="w-full h-full object-contain"
+                      alt="Tab img"
+                    />
+                  </div>
+                  <div class="w-[332px] h-[204px]">
+                    <img
+                      src="./src/assets/grid1.png"
+                      class="w-full h-full object-contain"
+                      alt="Tab img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
