@@ -250,6 +250,15 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
+  .bottom-3 {
+    bottom: calc(var(--spacing) * 3);
+  }
+  .bottom-5 {
+    bottom: calc(var(--spacing) * 5);
+  }
   .-left-5 {
     left: calc(var(--spacing) * -5);
   }
