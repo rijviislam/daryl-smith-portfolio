@@ -12,5 +12,6 @@
   --breakpoint-3xl: 1600px;
   --breakpoint-4xl: 1920px;
   --breakpoint-largest: 12560px;
+  --breakpoint-4k: 2560px;
   --font-dm: "DM Sans";
 }
