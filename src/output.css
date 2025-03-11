@@ -715,6 +715,9 @@
   .w-\[356px\] {
     width: 356px;
   }
+  .w-\[368px\] {
+    width: 368px;
+  }
   .w-\[536px\] {
     width: 536px;
   }
@@ -1747,6 +1750,9 @@
   .pl-10 {
     padding-left: calc(var(--spacing) * 10);
   }
+  .pl-12 {
+    padding-left: calc(var(--spacing) * 12);
+  }
   .text-center {
     text-align: center;
   }
@@ -2096,6 +2102,9 @@
   }
   .opacity-\[0\.2\] {
     opacity: 0.2;
+  }
+  .opacity-\[0\.3\] {
+    opacity: 0.3;
   }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
