@@ -375,7 +375,7 @@ gsap.from("#blogContainer #blog1", {
     scrollTrigger: {
       trigger: "#formContainer #form",
       scroller: "body",
-      start: "top 80%",
+      start: "top 120%",
       end: "top 40%",
       scrub: 1,
     },

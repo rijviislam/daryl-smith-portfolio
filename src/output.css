@@ -2617,6 +2617,11 @@
       padding: calc(var(--spacing) * 0);
     }
   }
+  .lg\:px-5 {
+    @media (width >= 992px) {
+      padding-inline: calc(var(--spacing) * 5);
+    }
+  }
   .lg\:px-\[92px\] {
     @media (width >= 992px) {
       padding-inline: 92px;

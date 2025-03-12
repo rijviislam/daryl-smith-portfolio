@@ -1670,78 +1670,80 @@
             class="flex xl:items-end lg:items-start lg:justify-start xl:justify-end xxl:mr-[127px] mr-0 flex-col px-5 xxl:px-0 mt-[120px] items-center justify-center"
           >
             <!-- CONTACT FORM   -->
-            <form class="flex flex-col" id="form">
+            <form class="flex flex-col">
               <h2
                 class="text-[#FFFFFF] font-dm font-bold text-[48px] text-center md:text-center lg:text-start"
               >
                 Contact
               </h2>
-              <div class="mt-10 flex gap-[23px] flex-col items-center">
-                <div class="flex lg:flex-row flex-col gap-[23px]">
-                  <label
-                    for="name"
-                    class="flex flex-col gap-2 text-[#FFF] font-dm text-[20px] font-medium"
-                  >
-                    First Name*
-                    <input
-                      type="text"
-                      id="name"
-                      class="w-[332px] h-12 rounded-[10px] border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400 bg-[#000] outline-none px-4"
-                    />
-                  </label>
-                  <label
-                    for="lastName"
-                    class="flex flex-col gap-2 text-[#FFF] text-[20px] font-dm font-medium"
-                  >
-                    Last name*
-                    <input
-                      type="text"
-                      id="lastName"
-                      class="w-[332px] h-12 rounded-[10px] border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400 outline-none px-4 bg-[#000]"
-                    />
-                  </label>
+              <div id="form">
+                <div class="mt-10 flex gap-[23px] flex-col items-center">
+                  <div class="flex lg:flex-row flex-col gap-[23px]">
+                    <label
+                      for="name"
+                      class="flex flex-col gap-2 text-[#FFF] font-dm text-[20px] font-medium"
+                    >
+                      First Name*
+                      <input
+                        type="text"
+                        id="name"
+                        class="w-[332px] h-12 rounded-[10px] border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400 bg-[#000] outline-none px-4"
+                      />
+                    </label>
+                    <label
+                      for="lastName"
+                      class="flex flex-col gap-2 text-[#FFF] text-[20px] font-dm font-medium"
+                    >
+                      Last name*
+                      <input
+                        type="text"
+                        id="lastName"
+                        class="w-[332px] h-12 rounded-[10px] border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400 outline-none px-4 bg-[#000]"
+                      />
+                    </label>
+                  </div>
+                  <div class="flex lg:flex-row flex-col gap-[23px]">
+                    <label
+                      for="email"
+                      class="flex flex-col gap-2 text-[#FFF] text-[20px] font-dm font-medium"
+                    >
+                      Email*
+                      <input
+                        type="email"
+                        id="email"
+                        class="w-[332px] h-12 rounded-[10px] border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400 bg-[#000] outline-none px-4"
+                      />
+                    </label>
+                    <label
+                      for="number"
+                      class="flex flex-col gap-2 text-[#FFF] text-[20px] font-dm font-medium"
+                    >
+                      Phone*
+                      <input
+                        type="number"
+                        id="number"
+                        class="w-[332px] h-12 rounded-[10px] border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400 bg-[#000] outline-none px-4 appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                      />
+                    </label>
+                  </div>
                 </div>
-                <div class="flex lg:flex-row flex-col gap-[23px]">
-                  <label
-                    for="email"
-                    class="flex flex-col gap-2 text-[#FFF] text-[20px] font-dm font-medium"
+                <label
+                  for="contactTextarea"
+                  id="content3"
+                  class="flex flex-col gap-2 text-[#FFF] font-dm text-[20px] font-medium mt-[72px]"
+                  >Message*
+                  <textarea
+                    id="contactTextarea"
+                    class="lg:w-[687px] h-[124px] bg-[#000] rounded-[10px] outline-none px-0 py-3 resize-none border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400"
                   >
-                    Email*
-                    <input
-                      type="email"
-                      id="email"
-                      class="w-[332px] h-12 rounded-[10px] border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400 bg-[#000] outline-none px-4"
-                    />
-                  </label>
-                  <label
-                    for="number"
-                    class="flex flex-col gap-2 text-[#FFF] text-[20px] font-dm font-medium"
-                  >
-                    Phone*
-                    <input
-                      type="number"
-                      id="number"
-                      class="w-[332px] h-12 rounded-[10px] border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400 bg-[#000] outline-none px-4 appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
-                    />
-                  </label>
-                </div>
-              </div>
-              <label
-                for="contactTextarea"
-                id="content3"
-                class="flex flex-col gap-2 text-[#FFF] font-dm text-[20px] font-medium mt-[72px]"
-                >Message*
-                <textarea
-                  id="contactTextarea"
-                  class="lg:w-[687px] h-[124px] bg-[#000] rounded-[10px] outline-none px-0 py-3 resize-none border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400"
+                  </textarea>
+                </label>
+                <button
+                  class="lg:w-[687px] text-[#FFF] font-dm text-[20px] font-normal active py-2 text-center rounded-[10px] mt-8 cursor-pointer px-4"
                 >
-                </textarea>
-              </label>
-              <button
-                class="lg:w-[687px] text-[#FFF] font-dm text-[20px] font-normal active py-2 text-center rounded-[10px] mt-8 cursor-pointer"
-              >
-                Send message
-              </button>
+                  Send message
+                </button>
+              </div>
             </form>
           </div>
         </div>
