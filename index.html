@@ -336,7 +336,7 @@
               </div>
               <!-- SMALL RIGHT SIDE  -->
               <div
-                class="lg:hidden md:block w-[92px] h-full relative xs:hidden sm:block"
+                class="lg:hidden md:block w-[92px] min-h-full relative xs:hidden sm:block"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -672,115 +672,127 @@
         </div>
       </div>
       <!-- SKILLS  -->
-      <div class="relative w-full flex items-center justify-center hidden">
+      <div class="relative w-full flex items-center justify-center">
         <div
           class="w-full bg-[#171B1A] min-h-full largest:w-[1320px] 4xl:w-[1320px] 3xl:w-[1320] xxl:w-[1320px] xl:w-[1231px] lg:w-full md:w-[631px] sm:w-[631px] z-50 relative"
         >
           <div
-            class="flex xl:items-end items-start justify-start xl:justify-end xxl:mr-[127px] mr-0 mt-[120px] flex-col"
+            class="flex xl:items-end items-start justify-start xl:justify-end xxl:mr-[127px] mr-0 mt-[120px] flex-col w-full"
           >
             <div
-              class="flex flex-col lg:items-end lg:justify-end items-start justify-start gap-8 mt-8 px-5 xxl:px-0 border-2 border-white w-full"
+              class="flex xl:items-end items-start justify-start xl:justify-end xxl:mr-[127px] mr-0 w-full"
             >
-              <div class="border-2 border-red-500">
+              <div class="w-full lg:w-auto px-5 xxl:px-0">
                 <h2
-                  class="text-[#FFFFFF] font-dm font-bold text-[48px] text-start"
+                  class="text-[#FFFFFF] font-dm font-bold text-[48px] lg:w-[688px] max-w-full lg:text-start text-center"
                 >
-                  Skills
+                  Portfolio
                 </h2>
-                <div class="w-full">
-                  <div class="lg:w-[685px] w-full flex justify-between">
-                    <h3 class="text-[#E3E3E3] font-dm text-[24px] font-medium">
-                      UI/UX Design
-                    </h3>
-                    <p
-                      class="text-[20px] font-dm font-medium bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent"
-                    >
-                      95%
-                    </p>
-                  </div>
-                  <div
-                    class="rounded-[25px] bg-gradient-to-r from-[rgba(245,189,77,0.30)] to-[rgba(248,146,34,0.30)] lg:w-[685px] w-full h-4 mt-[13px]"
-                  >
+                <div class="mt-8 flex flex-col gap-8">
+                  <div class="w-full">
+                    <div class="lg:w-[685px] w-full flex justify-between">
+                      <h3
+                        class="text-[#E3E3E3] font-dm text-[24px] font-medium"
+                      >
+                        UI/UX Design
+                      </h3>
+                      <p
+                        class="text-[20px] font-dm font-medium bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent"
+                      >
+                        95%
+                      </p>
+                    </div>
                     <div
-                      class="rounded-[25px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] lg:w-[649px] w-12/13 h-4"
-                    ></div>
-                  </div>
-                </div>
-                <div class="w-full">
-                  <div class="lg:w-[685px] flex justify-between">
-                    <h3 class="text-[#E3E3E3] font-dm text-[24px] font-medium">
-                      Photography
-                    </h3>
-                    <p
-                      class="text-[20px] font-dm font-medium bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent"
+                      class="rounded-[25px] bg-gradient-to-r from-[rgba(245,189,77,0.30)] to-[rgba(248,146,34,0.30)] lg:w-[685px] w-full h-4 mt-[13px]"
                     >
-                      90%
-                    </p>
+                      <div
+                        class="rounded-[25px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] lg:w-[649px] w-12/13 h-4"
+                      ></div>
+                    </div>
                   </div>
-                  <div
-                    class="rounded-[25px] bg-gradient-to-r from-[rgba(245,189,77,0.30)] to-[rgba(248,146,34,0.30)] w-full lg:w-[685px] h-4 mt-[13px]"
-                  >
+                  <div class="w-full">
+                    <div class="lg:w-[685px] flex justify-between">
+                      <h3
+                        class="text-[#E3E3E3] font-dm text-[24px] font-medium"
+                      >
+                        Photography
+                      </h3>
+                      <p
+                        class="text-[20px] font-dm font-medium bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent"
+                      >
+                        90%
+                      </p>
+                    </div>
                     <div
-                      class="rounded-[25px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] lg:w-[610px] w-8/10 h-4"
-                    ></div>
-                  </div>
-                </div>
-                <div class="w-full">
-                  <div class="lg:w-[685px] flex justify-between">
-                    <h3 class="text-[#E3E3E3] font-dm text-[24px] font-medium">
-                      Creativity
-                    </h3>
-                    <p
-                      class="text-[20px] font-dm font-medium bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent"
+                      class="rounded-[25px] bg-gradient-to-r from-[rgba(245,189,77,0.30)] to-[rgba(248,146,34,0.30)] w-full lg:w-[685px] h-4 mt-[13px]"
                     >
-                      80%
-                    </p>
+                      <div
+                        class="rounded-[25px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] lg:w-[610px] w-8/10 h-4"
+                      ></div>
+                    </div>
                   </div>
-                  <div
-                    class="rounded-[25px] bg-gradient-to-r from-[rgba(245,189,77,0.30)] to-[rgba(248,146,34,0.30)] w-full lg:w-[685px] h-4 mt-[13px]"
-                  >
+                  <div class="w-full">
+                    <div class="lg:w-[685px] flex justify-between">
+                      <h3
+                        class="text-[#E3E3E3] font-dm text-[24px] font-medium"
+                      >
+                        Creativity
+                      </h3>
+                      <p
+                        class="text-[20px] font-dm font-medium bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent"
+                      >
+                        80%
+                      </p>
+                    </div>
                     <div
-                      class="rounded-[25px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] w-6/9 lg:w-[536px] h-4"
-                    ></div>
-                  </div>
-                </div>
-                <div class="w-full">
-                  <div class="lg:w-[685px] flex justify-between">
-                    <h3 class="text-[#E3E3E3] font-dm text-[24px] font-medium">
-                      Team Work
-                    </h3>
-                    <p
-                      class="text-[20px] font-dm font-medium bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent"
+                      class="rounded-[25px] bg-gradient-to-r from-[rgba(245,189,77,0.30)] to-[rgba(248,146,34,0.30)] w-full lg:w-[685px] h-4 mt-[13px]"
                     >
-                      95%
-                    </p>
+                      <div
+                        class="rounded-[25px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] w-6/9 lg:w-[536px] h-4"
+                      ></div>
+                    </div>
                   </div>
-                  <div
-                    class="rounded-[25px] bg-gradient-to-r from-[rgba(245,189,77,0.30)] to-[rgba(248,146,34,0.30)] w-full lg:w-[685px] h-4 mt-[13px]"
-                  >
+                  <div class="w-full">
+                    <div class="lg:w-[685px] flex justify-between">
+                      <h3
+                        class="text-[#E3E3E3] font-dm text-[24px] font-medium"
+                      >
+                        Team Work
+                      </h3>
+                      <p
+                        class="text-[20px] font-dm font-medium bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent"
+                      >
+                        95%
+                      </p>
+                    </div>
                     <div
-                      class="rounded-[25px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] w-8/9 lg:w-[649px] h-4"
-                    ></div>
-                  </div>
-                </div>
-                <div class="w-full">
-                  <div class="lg:w-[685px] flex justify-between">
-                    <h3 class="text-[#E3E3E3] font-dm text-[24px] font-medium">
-                      Web Design
-                    </h3>
-                    <p
-                      class="text-[20px] font-dm font-medium bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent"
+                      class="rounded-[25px] bg-gradient-to-r from-[rgba(245,189,77,0.30)] to-[rgba(248,146,34,0.30)] w-full lg:w-[685px] h-4 mt-[13px]"
                     >
-                      95%
-                    </p>
+                      <div
+                        class="rounded-[25px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] w-8/9 lg:w-[649px] h-4"
+                      ></div>
+                    </div>
                   </div>
-                  <div
-                    class="rounded-[25px] bg-gradient-to-r from-[rgba(245,189,77,0.30)] to-[rgba(248,146,34,0.30)] w-full lg:w-[685px] h-4 mt-[13px]"
-                  >
+                  <div class="w-full">
+                    <div class="lg:w-[685px] flex justify-between">
+                      <h3
+                        class="text-[#E3E3E3] font-dm text-[24px] font-medium"
+                      >
+                        Web Design
+                      </h3>
+                      <p
+                        class="text-[20px] font-dm font-medium bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent"
+                      >
+                        95%
+                      </p>
+                    </div>
                     <div
-                      class="rounded-[25px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] w-8/9 lg:w-[649px] h-4"
-                    ></div>
+                      class="rounded-[25px] bg-gradient-to-r from-[rgba(245,189,77,0.30)] to-[rgba(248,146,34,0.30)] w-full lg:w-[685px] h-4 mt-[13px]"
+                    >
+                      <div
+                        class="rounded-[25px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] w-8/9 lg:w-[649px] h-4"
+                      ></div>
+                    </div>
                   </div>
                 </div>
               </div>

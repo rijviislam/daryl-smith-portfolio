@@ -1231,6 +1231,9 @@
   .overflow-x-hidden {
     overflow-x: hidden;
   }
+  .overflow-x-scroll {
+    overflow-x: scroll;
+  }
   .scroll-auto {
     scroll-behavior: auto;
   }
@@ -2542,6 +2545,11 @@
   .lg\:w-\[688px\] {
     @media (width >= 992px) {
       width: 688px;
+    }
+  }
+  .lg\:w-auto {
+    @media (width >= 992px) {
+      width: auto;
     }
   }
   .lg\:w-full {
