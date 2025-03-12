@@ -1,10 +1,5 @@
 var timeline = gsap.timeline();
-// timeline.from(".home-img", {
-//     x:-10,
-//     opacity: 0,
-//     duration: 0.5,
-//     delay:0.5,
-//  })
+
 timeline.from(".heading", {
   y: -10,
   opacity: 0,
@@ -29,12 +24,12 @@ timeline.from(".hero-box", {
   duration: 1,
   scale: 0.2,
 });
-timeline.from(".resume", {
-  y: -10,
-  opacity: 0,
-  duration: 0.5,
-  delay: 0.5,
-});
+// timeline.from(".resume", {
+//   y: -10,
+//   opacity: 0,
+//   duration: 0.5,
+//   delay: 0.5,
+// });
 gsap.from("#resume #resumeTitle", {
   y: -30,
   opacity: 0,
@@ -140,12 +135,7 @@ gsap.from("#skills #skillItem5", {
   scrollTrigger: "#skills #skillItem5",
 });
 
-gsap.from("#portfolio #item", {
-  scale: 0,
-  duration: 1,
-  delay: 1,
-  scrollTrigger: "#portfolio #item",
-});
+
 gsap.from("#portfolio #item1", {
   scale: 0,
   duration: 0.5,
@@ -380,8 +370,8 @@ gsap.from("#blogContainer #blog1", {
   gsap.from("#formContainer #form", {
     x: 200,
     opacity: 0,
-    duration: 2,
-    delay: 2,
+    duration: 3,
+    delay: 3,
     scrollTrigger: {
       trigger: "#formContainer #form",
       scroller: "body",
