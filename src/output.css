@@ -452,9 +452,6 @@
   .mt-\[13px\] {
     margin-top: 13px;
   }
-  .mt-\[14px\] {
-    margin-top: 14px;
-  }
   .mt-\[16px\] {
     margin-top: 16px;
   }
@@ -463,9 +460,6 @@
   }
   .mt-\[30px\] {
     margin-top: 30px;
-  }
-  .mt-\[52px\] {
-    margin-top: 52px;
   }
   .mt-\[56px\] {
     margin-top: 56px;
@@ -620,9 +614,6 @@
   .h-\[124px\] {
     height: 124px;
   }
-  .h-\[147px\] {
-    height: 147px;
-  }
   .h-\[204px\] {
     height: 204px;
   }
@@ -658,9 +649,6 @@
   }
   .min-h-\[60px\] {
     min-height: 60px;
-  }
-  .min-h-\[147px\] {
-    min-height: 147px;
   }
   .min-h-\[154px\] {
     min-height: 154px;
@@ -1241,6 +1229,9 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .overflow-x-hidden {
     overflow-x: hidden;
   }
@@ -1332,9 +1323,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-\[0\.5px\] {
+  .border-\[0\.1px\] {
     border-style: var(--tw-border-style);
-    border-width: 0.5px;
+    border-width: 0.1px;
   }
   .border-x {
     border-inline-style: var(--tw-border-style);
@@ -1680,11 +1671,11 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
-  .py-5 {
-    padding-block: calc(var(--spacing) * 5);
-  }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
+  }
+  .py-\[14px\] {
+    padding-block: 14px;
   }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
@@ -2217,6 +2208,10 @@
     --tw-duration: 150ms;
     transition-duration: 150ms;
   }
+  .duration-400 {
+    --tw-duration: 400ms;
+    transition-duration: 400ms;
+  }
   .ease-in {
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
@@ -2387,6 +2382,12 @@
         --tw-gradient-position: to right in oklab;
         background-image: linear-gradient(var(--tw-gradient-stops));
       }
+    }
+  }
+  .focus\:border-\[1px\] {
+    &:focus {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
     }
   }
   .xs\:hidden {
@@ -2624,11 +2625,6 @@
       padding-inline: 92px;
     }
   }
-  .lg\:py-0 {
-    @media (width >= 992px) {
-      padding-block: calc(var(--spacing) * 0);
-    }
-  }
   .lg\:pl-12 {
     @media (width >= 992px) {
       padding-left: calc(var(--spacing) * 12);
@@ -2754,6 +2750,16 @@
       padding-inline: 92px;
     }
   }
+  .\[\&\:\:-webkit-inner-spin-button\]\:appearance-none {
+    &::-webkit-inner-spin-button {
+      appearance: none;
+    }
+  }
+  .\[\&\:\:-webkit-outer-spin-button\]\:appearance-none {
+    &::-webkit-outer-spin-button {
+      appearance: none;
+    }
+  }
 }
 .overlay-img {
   opacity: 1;
@@ -2784,6 +2790,55 @@
   background: #000;
   fill: #000;
   filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.05));
+}
+.active {
+  border-radius: 8px;
+  background: linear-gradient(90deg, #f5bd4d 0.36%, #f89222 99.88%);
+}
+.btn {
+  background: linear-gradient(90deg, #f5bd4d 0.36%, #f89222 99.88%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 999;
+}
+.btn:hover {
+  -webkit-text-fill-color: white;
+  color: white;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, 50%);
+  border-radius: 80%;
+  background: linear-gradient(90deg, #f5bd4d 0.36%, #f89222 99.88%);
+  color: #fff;
+  transition: width 0.9s ease, height 0.9s ease, bottom 0.5s ease;
+  z-index: -1;
+}
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+  bottom: 50%;
+  color: #fff;
+  transform: translate(-50%, 50%);
+}
+.talk-btn {
+  transition: letter-spacing 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 1px solid #f5bd4d;
+}
+.talk-btn:hover {
+  background: linear-gradient(90deg, #f5bd4d 0.36%, #f89222 99.88%) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 }
 @property --tw-translate-x {
   syntax: "*";

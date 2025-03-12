@@ -75,7 +75,7 @@
               </div>
               <div class="flex gap-5">
                 <button
-                  class="border border-[#F5BD4D] font-bold text-[10px] md:text-[16px] font-dm py-3 px-6 inline-flex justify-center items-center rounded-[50px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent cursor-pointer"
+                  class="border border-[#F5BD4D] font-bold text-[10px] md:text-[16px] font-dm py-3 px-6 inline-flex justify-center items-center rounded-[50px] cursor-pointer overflow-hidden talk-btn bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent"
                 >
                   Talk To Me
                 </button>
@@ -210,12 +210,12 @@
                 <figure class="w-full h-[504px] bg-[#000]">
                   <img
                     src="./src/assets/handsome.png"
-                    class="w-full h-full object-contain"
+                    class="w-full h-full object-cover"
                     alt=""
                   />
                 </figure>
                 <div
-                  class="flex gap-4 mt-[14px] items-center justify-center lg:py-0 py-5"
+                  class="flex gap-4 items-center justify-center bg-[#000] shadow-[0px_-10px_25px_0px_rgba(255,255,255,0.09)] py-[14px]"
                 >
                   <a
                     href="#"
@@ -380,7 +380,7 @@
                   INTRODUCTION
                 </h2>
                 <h1
-                  class="font-dm text-[48px] font-bold leading-[130%] text-[#FFF] xxl:w-[611px]"
+                  class="font-dm text-[48px] font-bold leading-[130%] text-[#FFF] xxl:w-[611px] mt-[10px]"
                 >
                   I'm a Creative Developer & <br />
                   UI/UX Design Expert
@@ -401,7 +401,7 @@
                   Navigation and Structure.
                 </p>
                 <button
-                  class="rounded-[50px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] px-6 py-3 text-[#FFFFFF] font-dm text-base font-bold flex items-center gap-[10px] mt-[52px] cursor-pointer"
+                  class="rounded-[50px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] px-6 py-3 text-[#FFFFFF] font-dm text-base font-bold flex items-center gap-[10px] mt-10 cursor-pointer talk-btn"
                 >
                   Downdolad CV
                   <svg
@@ -1017,7 +1017,7 @@
                 <div class="flex gap-6 flex-col">
                   <div class="w-[332px] h-[248px] container relative">
                     <img
-                      src="./src/assets/Rectangle 12663.png"
+                      src="./src/assets/blog13.png"
                       class="w-full h-full object-cover overlay-img"
                       alt="Tab img"
                     />
@@ -1055,7 +1055,7 @@
                   </div>
                   <div class="w-[332px] h-[220px] container relative">
                     <img
-                      src="./src/assets/Rectangle 12664.png"
+                      src="./src/assets/blog14.png"
                       class="w-full h-full object-cover overlay-img"
                       alt="Tab img"
                     />
@@ -1093,7 +1093,7 @@
                   </div>
                   <div class="w-[332px] h-[220px] container relative">
                     <img
-                      src="./src/assets/Rectangle 12665.png"
+                      src="./src/assets/blog15.png"
                       class="w-full h-full object-cover overlay-img"
                       alt="Tab img"
                     />
@@ -1131,7 +1131,7 @@
                   </div>
                   <div class="w-[332px] h-[260px] container relative">
                     <img
-                      src="./src/assets/Rectangle 12666.png"
+                      src="./src/assets/blog16.png"
                       class="w-full h-full object-cover overlay-img"
                       alt="Tab img"
                     />
@@ -1489,11 +1489,51 @@
                       </ul>
                     </div>
                     <button
-                      class="text-[#FFF] text-base font-dm font-bold bg-gradient-to-r from-[#F5BD4D] to-[#F89222] py-3 px-6 cursor-pointer rounded-[8px] ml-6 mb-12"
+                      class="text-[#FFF] text-base font-dm font-bold active py-3 px-6 cursor-pointer rounded-[8px] ml-6 mb-12 border border-[#F5BD4D]"
                     >
                       Get Started
                     </button>
                   </div>
+                  <div class="bg-[#000] w-[332px] pt-12">
+                    <div
+                      class="rounded-tr-[50px] rounded-br-[50px] bg-gradient-to-r from-[#F5BD4D4D] to-[#F892222E] py-3 px-6 text-[#FFF] font-dm text-base font-bold inline-flex"
+                    >
+                      Popular
+                    </div>
+                    <h3
+                      class="text-[#FFF] font-dm text-[48px] font-bold mt-6 ml-6"
+                    >
+                      $99
+                      <span class="font-dm text-[#FFF] font-medium text-[18px]"
+                        >/ month</span
+                      >
+                    </h3>
+                    <div
+                      class="flex items-center justify-center mt-[30px] mb-8"
+                    >
+                      <ul
+                        class="bg-[#121414] w-[284px] text-[#FFF] px-4 py-6 flex flex-col gap-4 text-base font-dm font-normal"
+                      >
+                        <li>Interface Design</li>
+                        <li>Front-end Code</li>
+                        <li>Back-end Development</li>
+                        <li>Search Engine Optimization</li>
+                        <li>Awesome Support</li>
+                        <li>Responsive site</li>
+                        <li class="line-through text-[#979797]">Easy in use</li>
+                        <li class="line-through text-[#979797]">Useful site</li>
+                        <li class="line-through text-[#979797]">Speedy web</li>
+                      </ul>
+                    </div>
+                    <button
+                      class="text-[#FFF] text-base font-dm font-bold border border-[#F5BD4D] py-3 px-6 cursor-pointer rounded-[8px] ml-6 mb-12 btn relative overflow-hidden"
+                    >
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-6">
                   <div class="bg-[#000] w-[332px] pt-12">
                     <h5
                       class="rounded-tr-[50px] rounded-br-[50px] bg-gradient-to-r from-[#F5BD4D4D] to-[#F892222E] py-3 px-6 text-[#FFF] font-dm text-base font-bold inline-flex"
@@ -1528,47 +1568,7 @@
                       </ul>
                     </div>
                     <button
-                      class="text-[#FFF] text-base font-dm font-bold border border-[#F5BD4D] py-3 px-6 cursor-pointer rounded-[8px] ml-6 mb-12 transition duration-150 ease-in-out hover:bg-gradient-to-r from-[#F5BD4D] to-[#F89222]"
-                    >
-                      Get Started
-                    </button>
-                  </div>
-                </div>
-
-                <div class="flex flex-col gap-6">
-                  <div class="bg-[#000] w-[332px] pt-12">
-                    <div
-                      class="rounded-tr-[50px] rounded-br-[50px] bg-gradient-to-r from-[#F5BD4D4D] to-[#F892222E] py-3 px-6 text-[#FFF] font-dm text-base font-bold inline-flex"
-                    >
-                      Popular
-                    </div>
-                    <h3
-                      class="text-[#FFF] font-dm text-[48px] font-bold mt-6 ml-6"
-                    >
-                      $99
-                      <span class="font-dm text-[#FFF] font-medium text-[18px]"
-                        >/ month</span
-                      >
-                    </h3>
-                    <div
-                      class="flex items-center justify-center mt-[30px] mb-8"
-                    >
-                      <ul
-                        class="bg-[#121414] w-[284px] text-[#FFF] px-4 py-6 flex flex-col gap-4 text-base font-dm font-normal"
-                      >
-                        <li>Interface Design</li>
-                        <li>Front-end Code</li>
-                        <li>Back-end Development</li>
-                        <li>Search Engine Optimization</li>
-                        <li>Awesome Support</li>
-                        <li>Responsive site</li>
-                        <li class="line-through text-[#979797]">Easy in use</li>
-                        <li class="line-through text-[#979797]">Useful site</li>
-                        <li class="line-through text-[#979797]">Speedy web</li>
-                      </ul>
-                    </div>
-                    <button
-                      class="text-[#FFF] text-base font-dm font-bold border border-[#F5BD4D] py-3 px-6 cursor-pointer rounded-[8px] ml-6 mb-12"
+                      class="text-[#FFF] text-base font-dm font-bold border border-[#F5BD4D] py-3 px-6 cursor-pointer rounded-[8px] ml-6 mb-12 transition duration-150 ease-in-out hover:bg-gradient-to-r from-[#F5BD4D] to-[#F89222] btn relative overflow-hidden"
                     >
                       Get Started
                     </button>
@@ -1605,7 +1605,7 @@
                       </ul>
                     </div>
                     <button
-                      class="text-[#FFF] text-base font-dm font-bold py-3 px-6 cursor-pointer rounded-[8px] ml-6 mb-12 border border-[#F5BD4D]"
+                      class="text-[#FFF] text-base font-dm font-bold py-3 px-6 cursor-pointer rounded-[8px] ml-6 mb-12 border border-[#F5BD4D] btn relative overflow-hidden"
                     >
                       Get Started
                     </button>
@@ -1641,7 +1641,7 @@
                     <input
                       type="text"
                       id="name"
-                      class="w-[332px] h-12 rounded-[10px] border border-[#F5BD4D] bg-[#000] outline-none px-4"
+                      class="w-[332px] h-12 rounded-[10px] border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400 bg-[#000] outline-none px-4"
                     />
                   </label>
                   <label
@@ -1652,7 +1652,7 @@
                     <input
                       type="text"
                       id="lastName"
-                      class="w-[332px] h-12 rounded-[10px] border border-[#F5BD4D] outline-none px-4 bg-[#000]"
+                      class="w-[332px] h-12 rounded-[10px] border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400 outline-none px-4 bg-[#000]"
                     />
                   </label>
                 </div>
@@ -1665,7 +1665,7 @@
                     <input
                       type="email"
                       id="email"
-                      class="w-[332px] h-12 rounded-[10px] border border-[#F5BD4D] bg-[#000] outline-none px-4"
+                      class="w-[332px] h-12 rounded-[10px] border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400 bg-[#000] outline-none px-4"
                     />
                   </label>
                   <label
@@ -1676,7 +1676,7 @@
                     <input
                       type="number"
                       id="number"
-                      class="w-[332px] h-12 rounded-[10px] border-[0.5px] border-[#F5BD4D] bg-[#000] outline-none px-4"
+                      class="w-[332px] h-12 rounded-[10px] border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400 bg-[#000] outline-none px-4 appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
                     />
                   </label>
                 </div>
@@ -1687,12 +1687,12 @@
                 >Message*
                 <textarea
                   id="contactTextarea"
-                  class="lg:w-[687px] h-[124px] bg-[#000] border border-[#F5BD4D] rounded-[10px] outline-none px-0 py-3"
+                  class="lg:w-[687px] h-[124px] bg-[#000] rounded-[10px] outline-none px-0 py-3 resize-none border-[0.1px] border-[#F5BD4D] focus:border-[1px] transition duration-400"
                 >
                 </textarea>
               </label>
               <button
-                class="lg:w-[687px] text-[#FFF] font-dm text-[20px] font-normal bg-gradient-to-r from-[#F5BD4D] to-[#F89222] py-2 text-center rounded-[10px] mt-8"
+                class="lg:w-[687px] text-[#FFF] font-dm text-[20px] font-normal active py-2 text-center rounded-[10px] mt-8 cursor-pointer"
               >
                 Send message
               </button>
