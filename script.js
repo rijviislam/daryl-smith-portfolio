@@ -24,12 +24,7 @@ timeline.from(".hero-box", {
   duration: 1,
   scale: 0.2,
 });
-// timeline.from(".resume", {
-//   y: -10,
-//   opacity: 0,
-//   duration: 0.5,
-//   delay: 0.5,
-// });
+
 gsap.from("#resume #resumeTitle", {
   y: -30,
   opacity: 0,
