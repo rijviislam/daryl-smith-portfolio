@@ -12,11 +12,11 @@ A modern, interactive, and responsive portfolio website designed to showcase Dar
 
 ## Features
 
-- ✅ Fully Responsive – Optimized for desktop, tablet, and mobile devices.
-- ✅ Smooth Animations – GSAP and Lenis-powered transitions for a dynamic experience.
-- ✅ Modern UI Design – Clean and minimal aesthetic for a professional portfolio.
-- ✅ Interactive Sections – Showcasing projects, skills, and contact information.
-- ✅ Optimized Performance – Fast-loading pages with efficient animations.
+-  Fully Responsive – Optimized for desktop, tablet, and mobile devices.
+-  Smooth Animations – GSAP and Lenis-powered transitions for a dynamic experience.
+-  Modern UI Design – Clean and minimal aesthetic for a professional portfolio.
+-  Interactive Sections – Showcasing projects, skills, and contact information.
+-  Optimized Performance – Fast-loading pages with efficient animations.
 
 ## Technologies Used
 - HTML, CSS, Tailwind CSS – For styling and responsive layouts.
