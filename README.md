@@ -42,7 +42,13 @@ Run the development server:
   npm run dev
 ```
 
-Go Linve
+Open the Project in VS Code:
+- Navigate to the project folder.
+- Open the index.html file.
+
+Start the Live Server:
+- Click on Go Live in the Visual Studio Code status bar. (Requires the "Live Server" extension.)
+- Alternatively, right-click index.html and select "Open with Live Server."
 
 ## License
 
