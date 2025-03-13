@@ -1,3 +1,33 @@
+const tabButton = document.querySelectorAll(".tab-btn");
+const tabContent = document.querySelectorAll(".tab-content");
+
+tabButton.forEach((tab, idx) => {
+  tab.addEventListener("click", () => {
+    // Remove active classes from all buttons
+    tabButton.forEach((btn) => {
+      btn.classList.remove("active-btn");
+      btn.classList.remove("border-b-2", "border-[#F5BD4D]"); // Remove border-bottom classes
+      btn.classList.remove("text-color"); // Remove active text color
+      btn.classList.add("text-[#FFF]"); // Reset to default text color
+    });
+
+    // Add active classes to the clicked button
+    tab.classList.add("active-btn");
+    tab.classList.add("border-b-2", "border-[#F5BD4D]"); // Add border-bottom classes
+    tab.classList.remove("text-[#FFF]"); // Remove default text color
+    tab.classList.add("text-color"); // Add active text color
+
+    // Hide all tab content
+    tabContent.forEach((content) => {
+      content.classList.remove("active-tab");
+      content.classList.add("hidden");
+    });
+
+    // Show the corresponding tab content
+    tabContent[idx].classList.add("active-tab");
+    tabContent[idx].classList.remove("hidden");
+  });
+});
 var timeline = gsap.timeline();
 
 timeline.from(".heading", {
@@ -143,18 +173,7 @@ gsap.from("#portfolio #item1", {
     scrub: 1,
   },
 });
-gsap.from("#portfolio #item2", {
-  scale: 0,
-  duration: 0.5,
-  delay: 0.5,
-  scrollTrigger: {
-    trigger: "#portfolio #item2",
-    scroller: "body",
-    start: "top 90%",
-    end: "top 50%",
-    scrub: 1,
-  },
-});
+
 gsap.from("#portfolio #item3", {
   scale: 0,
   duration: 0.5,

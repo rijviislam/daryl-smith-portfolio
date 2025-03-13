@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-50: oklch(0.971 0.013 17.38);
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-black: #000;
     --color-white: #fff;
@@ -494,9 +495,6 @@
   .mb-\[36px\] {
     margin-bottom: 36px;
   }
-  .mb-\[73px\] {
-    margin-bottom: 73px;
-  }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
@@ -589,9 +587,6 @@
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
-  }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
   }
   .h-4 {
     height: calc(var(--spacing) * 4);
@@ -1323,6 +1318,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
   .border-\[0\.1px\] {
     border-style: var(--tw-border-style);
     border-width: 0.1px;
@@ -1355,6 +1354,10 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
   .border-l {
     border-left-style: var(--tw-border-style);
     border-left-width: 1px;
@@ -1385,6 +1388,15 @@
   }
   .border-\[\#F5BD4D\] {
     border-color: #F5BD4D;
+  }
+  .border-red-50 {
+    border-color: var(--color-red-50);
+  }
+  .border-red-500 {
+    border-color: var(--color-red-500);
+  }
+  .border-white {
+    border-color: var(--color-white);
   }
   .border-white\/10 {
     border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
@@ -1691,6 +1703,9 @@
   }
   .pr-\[13px\] {
     padding-right: 13px;
+  }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
@@ -2118,6 +2133,10 @@
   }
   .drop-shadow {
     --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow( 0 1px 1px rgb(0 0 0 / 0.06));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .drop-shadow-\[0_0_6px_rgba\(255\,255\,255\,0\.05\)\] {
+    --tw-drop-shadow: drop-shadow(0 0 6px rgba(255,255,255,0.05));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .drop-shadow-none {
@@ -2623,11 +2642,6 @@
       padding: calc(var(--spacing) * 0);
     }
   }
-  .lg\:px-5 {
-    @media (width >= 992px) {
-      padding-inline: calc(var(--spacing) * 5);
-    }
-  }
   .lg\:px-\[92px\] {
     @media (width >= 992px) {
       padding-inline: 92px;
@@ -2847,6 +2861,28 @@
   font-weight: 700 !important;
   letter-spacing: 1px;
   box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
+.tab-content {
+  display: none;
+}
+.active-tab {
+  display: block;
+}
+.active-btn {
+  color: white;
+}
+.text {
+  color: white;
+}
+.text-color {
+  background: linear-gradient(90deg, #f5bd4d 0.36%, #f89222 99.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.border-b-2 {
+  border-bottom: 3px solid;
+  border-image-source: linear-gradient(90deg, #f5bd4d 0.36%, #f89222 99.88%);
+  border-image-slice: 1;
 }
 @property --tw-translate-x {
   syntax: "*";

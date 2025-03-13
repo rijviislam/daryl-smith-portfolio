@@ -105,3 +105,30 @@
   letter-spacing: 1px;
   box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 }
+
+.tab-content {
+  display: none;
+}
+
+.active-tab {
+  display: block;
+}
+.active-btn {
+  color: white;
+}
+
+.text {
+  color: white;
+}
+
+.text-color {
+  background: linear-gradient(90deg, #f5bd4d 0.36%, #f89222 99.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-b-2 {
+  border-bottom: 3px solid;
+  border-image-source: linear-gradient(90deg, #f5bd4d 0.36%, #f89222 99.88%);
+  border-image-slice: 1;
+}
